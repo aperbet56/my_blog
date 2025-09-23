@@ -15,7 +15,7 @@ Ce mini projet permet d'afficher les articles d'un blog depuis jsonplaceholder. 
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/my_blog/
 
 ## Projet développé avec
 
