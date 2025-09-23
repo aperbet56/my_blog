@@ -1,3 +1,7 @@
+/**** Importation de la police "Alan Sans" ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+
 /**** Reset ****/
 
 * {
@@ -9,19 +13,19 @@
 }
 
 /**** Style général de la page ****/
-  
+
 body {
     width: 100%;
     min-height: 100vh;
     background-color: #296ca8;
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: "Alan Sans", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 }
-  
+
 header {
     display: flex;
     justify-content: center;
@@ -39,13 +43,13 @@ h1 {
 .main__content {
     flex-grow: 1;
 }
-  
+
 .filter__container {
     margin-top: 20px;
     width: 80vw;
     max-width: 800px;
 }
-  
+
 .filter {
     width: 100%;
     padding: 15px;
@@ -56,7 +60,7 @@ h1 {
 .filter:focus {
     border: 3px solid #000000;
 }
-  
+
 .post {
     position: relative;
     background-color: #4992d3;
@@ -67,17 +71,19 @@ h1 {
     display: flex;
     width: 80vw;
     max-width: 800px;
+    cursor: pointer;
+    will-change: transform;
     transition: transform 0.3s ease-in-out;
 }
 
 .post:hover {
     transform: scale(1.02);
-} 
+}
 
 .number {
     position: absolute;
     top: 50%;
-    left: -15px;
+    left: -20px;
     transform: translateY(-50%);
     font-size: 15px;
     width: 40px;
@@ -88,9 +94,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px 10px; 
+    padding: 7px 10px;
 }
-  
+
 .post-info {
     margin-left: 20px;
 }
@@ -105,7 +111,7 @@ h1 {
     line-height: 1.5;
     font-size: 18px;
 }
-    
+
 .loader {
     position: fixed;
     bottom: 50px;
@@ -115,7 +121,7 @@ h1 {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-  
+
 .circle {
     width: 25px;
     height: 25px;
@@ -124,11 +130,11 @@ h1 {
     margin: 10px;
     animation: bounce 0.5s ease-in-out infinite;
 }
-  
+
 .circle:nth-child(2) {
     animation-delay: 0.1s;
 }
-  
+
 .circle:nth-child(3) {
     animation-delay: 0.2s;
 }
@@ -136,13 +142,14 @@ h1 {
 /**** Animation bounce ****/
 
 @keyframes bounce {
+
     0%,
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     50% {
-      transform: translateY(-10px);
+        transform: translateY(-10px);
     }
 }
 
