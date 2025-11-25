@@ -30,7 +30,7 @@ const getPosts = async () => {
     })
     .catch(function (err) {
       // Affichage d'un message d'erreur dans la console
-      console.log("Désolé, une erreur est survenue sur le serveur.");
+      console.error(err.message);
     });
 };
 
