@@ -12,7 +12,7 @@
     outline: none;
 }
 
-/**** Style général de la page ****/
+/**** body ****/
 
 body {
     width: 100%;
@@ -25,6 +25,8 @@ body {
     align-items: center;
     margin-bottom: 100px;
 }
+
+/**** header ****/
 
 header {
     display: flex;
@@ -40,9 +42,13 @@ h1 {
     text-align: center;
 }
 
+/**** main ****/
+
 .main__content {
     flex-grow: 1;
 }
+
+/**** section filter__container ****/
 
 .filter__container {
     margin-top: 20px;
@@ -55,11 +61,14 @@ h1 {
     padding: 15px;
     font-size: 18px;
     border-radius: 8px;
+    border: 3px solid transparent;
 }
 
 .filter:focus {
-    border: 3px solid #000000;
+    border: 3px solid #3da9fc;
 }
+
+/**** section posts__container ****/
 
 .post {
     position: relative;
@@ -111,6 +120,8 @@ h1 {
     line-height: 1.5;
     font-size: 18px;
 }
+
+/**** div loader ****/
 
 .loader {
     position: fixed;
