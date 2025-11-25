@@ -101,6 +101,7 @@ filterInput.addEventListener("input", filterPosts);
 // Ecoute de l'événement scroll (le défilement est émis lorsque l'on fait défiler le document ou un élément) sur la page
 window.addEventListener("scroll", () => {
   const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+  // console.log({ scrollTop, scrollHeight, clientHeight });
 
   if (scrollHeight - scrollTop === clientHeight) {
     // Appel de la fonction showLoading
