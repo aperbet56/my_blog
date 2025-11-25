@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Importation dest styles -->
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Mon Blog</title>
   </head>
   <body>
+    <!-- Début du header -->
     <header>
       <h1>Mon blog</h1>
     </header>
+    <!-- Fin du header -->
+
+    <!-- Début du main -->
     <main class="main__content">
+      <!-- Début de la section filter__container -->
       <section class="filter__container">
         <input
           type="text"
@@ -21,7 +27,9 @@
           placeholder="Trouver un post..."
         />
       </section>
+      <!-- Fin de la section filter__container -->
 
+      <!-- Début de la section posts__container -->
       <section class="posts__container">
         <!-- JavaScript 
         <article class="post">
@@ -33,14 +41,19 @@
         </article>
         -->
       </section>
+      <!-- Fin de la section posts__container -->
 
+      <!-- Début de la div loader -->
       <div class="loader">
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
       </div>
+      <!-- Fin de la div loader -->
     </main>
+    <!-- Fin du main -->
 
+    <!-- Importation du fichier JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
