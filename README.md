@@ -1,4 +1,4 @@
-## MON BLOG ✍️
+## MON BLOG ✍🏻
 
 ![Design preview for the project](./img/preview.png)
 
